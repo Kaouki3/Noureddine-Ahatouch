@@ -8,6 +8,8 @@
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,10 +20,18 @@ color: white;
    padding: 20px;
    padding-top: 30px;
    text-align: center;
+   align-items: last baseline;
+   letter-spacing: 2px;
    
    
    width: 100%;
    
+}
+header a i {
+    font-size: 20px;
+    color:white;
+    margin-right: 20px;
+
 }
 main{
    margin-top: 75px;
