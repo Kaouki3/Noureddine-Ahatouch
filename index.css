@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+.items{
+    /*text-align: center;*/
+}
+
+.container{
+    background-image: url(index1.jpg);
+    background-size: cover;
+    display: grid;
+    grid-auto-rows: minmax(10vh,auto);
+    grid-template-areas:
+    "header header header header header"
+    "men cont cont cont righ"
+    "men cont cont cont righ"
+    "men cont cont cont righ"
+    "men cont cont cont righ"
+    "men cont cont cont righ"
+    "men cont cont cont righ"
+    "men cont cont cont righ"
+    
+    
+    "footer footer footer footer footer";
+    grid-gap: 10px;
+   /* align-items: center;
+    justify-items: center;*/
+}
+.items1{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 10vh;
+    grid-area:header ;
+    background: linear-gradient(to left,#3498DB,#85C1E9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color:aliceblue;
+}
+.items2{
+    grid-area:cont;
+    z-index: 0;
+    
+}
+.items3{
+    grid-area:men ;
+    
+    color: white;
+    z-index: -1;
+}
+.items4{
+    grid-area: righ;
+    
+    color: white;
+    z-index: -2;
+}
+.items5{
+    grid-area:footer ;
+    z-index: 2;
+    
+    
+}
+/* -------------Content-------------- */
+.box{ 
+    background:transparent;
+    border:1px solid black  ;
+   text-align: center;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    padding-top: 20px;
+    box-shadow: 8px 6px 8px #B4B4B7;
+    
+}
+.cards{
+    
+    display: grid;
+    grid-auto-rows: minmax(200px , auto);
+    grid-gap: 5px;
+    justify-items: center;
+    
+}
+
+.face a i{
+    font-size: 200px;
+    color: blue;
+}
+.face a{
+    width: 300px;
+    height: 300px;
+    
+    
+}
+
+
+.what a{
+    width: 300px;
+    height: 300px;
+}
+.insta a{
+    width: 300px;
+    height: 300px;
+}
+.email a{
+    width: 300px;
+    height: 300px;
+}
+.what a i{
+    font-size:200px ;
+    color: #0e8312;
+}
+.insta a i{
+    font-size: 200px;
+    color:#F541ED ;
+}
+.email a i{
+    font-size: 200px;
+    color:#4141F5 ;
+    
+}
+/*----------------------Footer-----------------------*/
+
+.items5{text-align: center;padding-top: 20px;}
